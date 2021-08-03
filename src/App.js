@@ -7,10 +7,10 @@ function App() {
   const [news, setNews ] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const deleteItem = (id)=>{
-    const deleteNews = news.filter((item) => item.index !== index)
-    setNews(deleteNews)
-  }
+  // const deleteItem = (id)=>{
+  //   const deleteNews = news.filter((item) => item.index !== index)
+  //   setNews(deleteNews)
+  // }
 
   const fetchData = async ()=>{
       setIsLoading(true)
@@ -30,12 +30,12 @@ useEffect(()=>{
 },[]);
 
 if(isLoading){
-  return <p>Loading</p>
+  return <h1>Loading...</h1>
 }
 
   return (
     <>
-    <News news={news} deleteItem={deleteItem} />
+    <News news={news} />
 
     </>
   );

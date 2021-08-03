@@ -1,6 +1,6 @@
 import './showNews.css'
 
-export default function ShowNews({ index, author, title, description, publishedAt, urlToImage, deleteItem }) {
+export default function ShowNews({ index, author, title, description, publishedAt, urlToImage,  }) {
     return (
         <div className='showNews'>
             <div className='showNewsImg'>
