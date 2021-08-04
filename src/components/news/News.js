@@ -7,11 +7,11 @@ export default function News({ news }) {
             <h1 className='newTitle'>News</h1>
             <div className='newContainer'>
                 { news.map((item, index)=>{
-                    
                         return(
-                        <ShowNews key={index} {...item}   />  
+                        <ShowNews key={index} {...item}  
+                        // deleteItem={deleteItem} 
+                         />  
                     )
-                    
                 })}
                
             </div>

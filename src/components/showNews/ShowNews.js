@@ -1,6 +1,6 @@
 import './showNews.css'
 
-export default function ShowNews({ index, author, title, description, publishedAt, urlToImage,  }) {
+export default function ShowNews({ id, author, title, description, publishedAt, urlToImage,  }) {
     return (
         <div className='showNews'>
             <div className='showNewsImg'>
@@ -10,9 +10,9 @@ export default function ShowNews({ index, author, title, description, publishedA
             <h5>{title}</h5>
             <p>{description}</p>
             <small>{publishedAt}</small>
-            {/* <div className='deleteNew'>
-            <button onClick={()=>deleteItem(index)}>Delete</button>
-            </div> */}
+          {/* <button onClick={deleteItem(author)}>
+              Remove
+          </button> */}
             
         </div>
     )
